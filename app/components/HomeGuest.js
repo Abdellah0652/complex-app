@@ -1,29 +1,30 @@
 import React from "react"
+import Page from "./Page"
 
 function HomeGuest() {
   return (
-    <div className="container py-md-5">
+    <Page title="Welcome!" wide={true}>
       <div className="row align-items-center">
         <div className="col-lg-7 py-3 py-md-5">
-          <h1 className="display-3">Remember Writing-?</h1>
+          <h1 className="display-3">Remember Writing?</h1>
           <p className="lead text-muted">Are you sick of short tweets and impersonal &ldquo;shared&rdquo; posts that are reminiscent of the late 90&rsquo;s email forwards? We believe getting back to actually writing is the key to enjoying the internet again.</p>
         </div>
         <div className="col-lg-5 pl-lg-5 pb-3 py-lg-5">
           <form>
             <div className="form-group">
-              <label for="username-register" className="text-muted mb-1">
+              <label htmlFor="username-register" className="text-muted mb-1">
                 <small>Username</small>
               </label>
-              <input id="username-register" name="username" className="form-control" type="text" placeholder="Pick a username" autocomplete="off" />
+              <input id="username-register" name="username" className="form-control" type="text" placeholder="Pick a username" autoComplete="off" />
             </div>
             <div className="form-group">
-              <label for="email-register" className="text-muted mb-1">
+              <label htmlFor="email-register" className="text-muted mb-1">
                 <small>Email</small>
               </label>
-              <input id="email-register" name="email" className="form-control" type="text" placeholder="you@example.com" autocomplete="off" />
+              <input id="email-register" name="email" className="form-control" type="text" placeholder="you@example.com" autoComplete="off" />
             </div>
             <div className="form-group">
-              <label for="password-register" className="text-muted mb-1">
+              <label htmlFor="password-register" className="text-muted mb-1">
                 <small>Password</small>
               </label>
               <input id="password-register" name="password" className="form-control" type="password" placeholder="Create a password" />
@@ -34,7 +35,8 @@ function HomeGuest() {
           </form>
         </div>
       </div>
-    </div>
+    </Page>
   )
 }
+
 export default HomeGuest
