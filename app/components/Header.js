@@ -1,21 +1,20 @@
 import React from "react"
 import HeaderLoggedOut from "./HeaderLoggedOut"
+import { Link } from "react-router-dom"
 
 function Header() {
-  ;<>
-    return (
+  return (
     <header className="header-bar bg-primary mb-3">
       <div className="container d-flex flex-column flex-md-row align-items-center p-3">
         <h4 className="my-0 mr-md-auto font-weight-normal">
-          <link to="/" className="text-white">
+          <Link to="/" className="text-white">
             {" "}
             ComplexApp{" "}
-          </link>
+          </Link>
         </h4>
         <HeaderLoggedOut />
       </div>
     </header>
-    )
-  </>
+  )
 }
 export default Header
