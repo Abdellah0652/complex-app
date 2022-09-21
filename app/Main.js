@@ -8,7 +8,7 @@ import HomeGuest from "./components/HomeGuest"
 import Footer from "./components/Footer"
 import About from "./components/About"
 import Terms from "./components/Terms"
-
+import HeaderLoggedIn from "./components/HeaderLoggedIn"
 function Main() {
   return (
     <BrowserRouter>

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { useState } from "react"
 import Axios from "axios"
-function HeaderLoggedOut() {
+function HeaderLoggedOut(props) {
   const [username, setUsername] = useState()
   const [password, setPassword] = useState()
   async function handleSubmit(e) {
@@ -11,8 +11,9 @@ function HeaderLoggedOut() {
 
       if (response.data) {
         console.log(response.data)
+        props.setLoggedIn(true)
       } else {
-        console.log("user / password error")
+        console.log(" Incorrect username / password error")
       }
     } catch (e) {
       console.log("there was a problem")
